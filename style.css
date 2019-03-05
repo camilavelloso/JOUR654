@@ -1,18 +1,60 @@
 h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
-  width:50%;
-  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-weight: bolder;
 }
 
 h2{
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  width:50%;
-  margin: 0 auto;
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-decoration: underline;
 }
 
-h3{
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+img{
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.chart_title{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  width:60%;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+
+.chart_subtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  width:60%;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.source{
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-style: italic;
@@ -20,7 +62,7 @@ h3{
   margin: 0 auto;
 }
 
-#refugeeschart{
+#newsemp{
   width:50%;
-  margin: 0 auto;
+  text-align: left;
 }

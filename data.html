@@ -4,7 +4,7 @@
 
 <head>
 
-  <title> Page Title </title>
+  <title> JOUR654 Project</title>
 
   <!-- Bootstrap link -->
 
@@ -24,43 +24,93 @@
   <!-- Load Google Fonts -->
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 
 </head>
 
 <body>
 <br>
 
-  <h1><b>Bar Chart on Refugee Admissions to the United States</b></h1>
-  <h2>Between Fiscal Year 2014 and 2018</h2>
+<h1><b> Phases I & II Outline </b></h1>
 
-  <div id="refugeeschart"></div>
+<h2> Introduction </h2>
 
-  <h3>Source: Data collected from the Refugee Processing Center</h3>
+<p>Graduate students at Philip Merrill College of Journalism are concerned about their ability to get internships while in school and to get jobs after graduation. Because graduate students have different educational backgrounds, they don’t have the same journalism experience when applying for internships and jobs. For example, by the time an undergraduate student applies for an internship, they have had a few years worth of experience, many clips, and maybe a few internships. When a graduate student begins applying for internships, they have had two months of classes and often only have a couple of clips.</p>
 
-    <script type="text/javascript">
+<br>
 
-      var chart = c3.generate({
-          bindto: '#refugeeschart',
-          data: {
-              columns: [
-                  ['2014', 17476],
-                  ['2015', 22472],
-                  ['2016', 31624],
-                  ['2017', 20232],
-                  ['2018', 10459]
-              ],
-              type: 'bar'
-          },
-          bar: {
-              width: {
-                  ratio: 0.5 // this makes bar width 50% of length between ticks
-              }
-              // or
-              //width: 100 // this makes bar width 100px
-          }
+<p>Furthermore, journalism graduate student don’t have industry connections as they are are just entering the field and come from all around the country. They often feel like they are underqualified and not taken seriously. This can sometimes lead to anxiety and uncertainty about the future. We would like to address this challenge and help journalism graduate students in their search for internships and jobs. </p>
+
+<h2>Mind Mapping</h2>
+
+<p> As Philip Merrill College of Journalism graduate students ourselves, we understand to an extent the problems that we and many in our cohort face. We began our brainstorming by creating a mind map and laying our concerns out on paper. </p>
+
+<img src="mindmap.jpg" height="500" width="700">
+
+<p>As we discussed the challenges that we mapped out, we saw that there was a need for more career development and networking opportunities for graduate students in addition for the chance to see how media and news organizations operate on a daily basis. </p>
+
+<h2>Goals</h2>
+
+<p>Our goal with this project is to simplify the career and internship finding process for journalism graduate students at the University of Maryland. We want to ease stress and uncertainty about future employment, help students develop relationships with professionals in the industry and give them the tools to gain the experience they need to market themselves to potential employers. </p>
+
+<h2>Indicators of Success</h2>
+
+<p>We will know we are successful in this pursuit if graduate students are less stressed in seeking jobs and internships, if they know how to market their unique skill set, and if they are confident about going into the field of journalism.</p>
+
+<h2> Understanding the challenge </h2>
+
+<p>
+  <li>What do you believe you already know about this challenge?</li>
+  <li>What would you like to learn more about? Capture your assumptions and your questions.</li>
+  <li>Summarize your research</li>
+  <li>Include key highlights of your research</li>
+  <li>An interactive JavaScript data visualization illustrating one your research findings. You can include a static image in the report and link it to the interactive version in CodePen or any other dynamic program you choose to use. You can create this in Highcharts, ChartsJS or other JavaScript based program (but no Infogram, Canva, Piktochart or other no-coding-needed data visualization tools)</li>
+</p>
+
+
+<div class="chart_title"><b>Newsroom Employment in the United States</b></div>
+<div class="chart_subtitle">Changes in total employment for News Analysts, Reporters and Correspondents between 2012 to 2018. </div>
+<div id="newsemp"></div>
+<div class="source">Source: Bureau of Labor Statistics</div>
+
+<h2>Defining your audience</h2>
+
+<p>The people involved in our topic are primarily graduate students in the Philip Merrill College of Journalism. Our cohort consists of about 30 master’s students. Class size fluctuates by year, but generally there are about (70~) graduate students enrolled in a Merrill master’s program each year since 2015.</p>
+
+<h2>Interviews</h2>
+
+<p>We decided that we wanted to interview graduate students in our cohort, a graduate student that is one year above us, and Adrianne Flynn, internship and career services counselor. To come up with questions, we discussed what we wanted to learn from them. We wanted to understand their backgrounds, why they wanted to pursue a career in journalism and a detailed report on their search for jobs and internships. We wanted to know the struggles they faced and the things that have been helpful to them so far in their search. </p>
+
+<p>Each of our three team members interviewed two individuals. The interviews were either conducted in-person, on the phone or by email and each interview lasted about 30 minutes. In-person interviews were conducted in the journalism building. No equipment was used, but notes were taken either on the computer or on paper. We then used our notes to write up summaries of our conversations.</p>
+
+<h2>Interpretation</h2>
+
+<p>
+  <li>What are some common themes, patterns and connection based on your research and interviews?</li>
+  <li>Did you find any contradictions? Did you have any unexpected learnings or find something that felt surprising? Why?</li>
+  <li>After having discussed with your team, and/or gotten feedback on the categories, what are you excited to dig deeper into?</li>
+  <li>Redefine the problem using a Point of View (POV) statement based on what you know and what you heard and learned from you interviews.</li>
+  <li>Write down 1-3 How Might We questions based on your POV statement.</li>
+</p>
+
+
+<br><br>
+
+
+
+  <script type="text/javascript">
+
+    var chart = c3.generate({
+        bindto: '#newsemp',
+        data: {
+            x: 'Year',
+            columns: [
+                ['Year', 2012, 2013, 2014, 2015, 2016, 2017],
+                ['Newsroom employment', 50740, 48460, 46590, 45790, 45160, 44480]
+            ]
+        }
       });
-
-    </script>
+  </script>
 
 
 </body>
