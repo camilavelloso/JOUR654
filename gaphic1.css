@@ -1,0 +1,23 @@
+.chart_subtitle{
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  width:70%;
+  text-align: left;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.source{
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-style: italic;
+  width:70%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#newsemp{
+  width:70%;
+  text-align: left;
+  margin: 0 auto;
+}
